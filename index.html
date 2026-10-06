@@ -221,8 +221,8 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 </style>
 </head>
 <body>
-<!-- 要恢復「AI開發力」課程：把下一行的 hide-c4 刪掉即可 -->
-<div class="page-root hide-c4">
+<!-- 要再隱藏「AI開發力」：在下一行 class 加上 hide-c4 -->
+<div class="page-root">
 <header class="top">
   <div class="wrap">
     <a class="brand" href="#">AI數位賦能實戰系列課程</a>
@@ -238,7 +238,6 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
         <p class="pill">115年度 奇美醫院</p>
         <h1><span class="ai">AI</span><span class="h1a">數位賦能</span><span class="h1b">實戰系列課程</span></h1>
         <p class="tagline">從日常工作到專業決策，<br>讓 AI 成為你最強的工作夥伴！</p>
-        <p class="lede"><span class="c4-part">四</span><span class="no-c4"></span></p>
       </div>
       <aside class="hero-side">
         <ul class="skills">
@@ -280,8 +279,8 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
         <a class="tile k4 c4-part" href="#c4">
           <span class="when">1/16 – 1/17</span><h2>AI開發力</h2>
           <canvas data-viz="code" aria-hidden="true"></canvas>
-          <p>用對話和 AI 一起寫程式，把工作上的想法做成工具。</p>
-          <div class="tags"><span>進階</span><span>大綱待公布</span></div>
+          <p>用 AI Agent 建立醫療預測模型，依規格做出推理系統與 MCP 工具。</p>
+          <div class="tags"><span>中階–進階</span><span>不需程式經驗</span></div>
           <div class="tile-seat">限額 <b>50</b> 人｜額滿為止</div>
           <div class="hrs">12<small>小時</small></div>
         </a>
@@ -478,13 +477,13 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
       <div>
         <div class="tag">AI開發力</div>
         <h3>Vibe Coding × AI 程式開發進階實戰</h3>
-        <p class="teacher"><b>陳博士</b>｜曾任中研院資訊科學所博士後研究員、104 人資學院資料科學家</p>
+        <p class="teacher"><b>陳博士</b>｜曾任中研院資訊科學所博士後研究員、104 人資學院資料科學家，具多年 AI 教學與實務經歷</p>
       </div>
       <div class="signup" data-course="c4">
         <div class="hrs">12<small>小時</small></div>
         <div class="seat"><p class="cap">限額 <b>50</b> 人</p><p class="seat-dl">額滿為止</p></div>
-        <!-- 請把 href 換成本課程的報名表單連結 -->
-        <a class="btn btn-k reg-btn" href="#" target="_blank" rel="noopener">報名這堂課</a>
+        <!-- 表單需先新增「AI開發力」選項（Apps Script 執行 syncCourses），此連結才會自動勾選 -->
+        <a class="btn btn-k reg-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScup0g_ZF94PJHTxByd7ItfslIp7-TEsIbrNCmYcQSIi92U_w/viewform?usp=pp_url&amp;entry.690941759=AI%E9%96%8B%E7%99%BC%E5%8A%9B%EF%BD%9CVibe+Coding+%C3%97+AI+%E7%A8%8B%E5%BC%8F%E9%96%8B%E7%99%BC%E9%80%B2%E9%9A%8E%E5%AF%A6%E6%88%B0%EF%BC%881/16%E3%80%811/17%EF%BC%89" target="_blank" rel="noopener">報名這堂課</a>
       </div>
     </div>
     <div class="c-grid">
@@ -494,15 +493,39 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
           <li><div class="d">1/16<span>週六</span></div><div class="t">09:30–16:30</div><span class="h">6H</span></li>
           <li><div class="d">1/17<span>週日</span></div><div class="t">09:30–16:30</div><span class="h">6H</span></li>
         </ul>
-        <p class="note">連續兩天的週末全天課程。</p>
+        <p class="note">此為延續性的實作課程，分兩天時段上完。</p>
       </div>
-      <div>
-        <div class="blk-t">課程定位與修課條件</div>
-        <div class="level" data-range="3,3"><span>入門</span><span>基礎</span><span>中階</span><span>進階</span></div>
-        <p class="level-cap">課程名稱為「進階實戰」，詳細修課條件將隨大綱公布。</p>
+      <div class="selfcheck">
+        <div class="blk-t">課程定位、修課條件與課前準備</div>
+        <div class="level" data-range="2,3"><span>入門</span><span>基礎</span><span>中階</span><span>進階</span></div>
+        <p class="level-cap">課程定位：中階至進階實務</p>
+        <p class="req-t">修課條件</p><ul class="req"><li>具備基本電腦、瀏覽器及表格資料操作能力</li><li>無須程式開發或機器學習經驗</li></ul>
+        <p class="req-t">課前準備</p><ul class="req"><li>攜帶筆電上機實作</li><li>預先備妥 AI Agent 開發工具：Claude Code、OpenAI Codex 或 Google Antigravity，擇一即可</li><li>開課前完成帳號申請（課堂中也會說明申請流程與使用方式）</li><li>免費額度不足或有進階需求，可自行評估訂閱付費方案；費用以各官方網站公告為準，由學員自行負擔</li></ul>
       </div>
     </div>
-    <div class="pending"><b>課程大綱、適合對象與課前準備即將公布。</b>講師正在調整課程內容，上課日期已確定，歡迎先保留時間。</div>
+    <div class="c-content">
+      <div><div class="blk-t">課程大綱</div>
+        <ol>
+          <li>建立醫療預測模型
+            <ul><li>認識機器學習核心概念與醫療預測情境</li><li>運用 AI Agent 準備資料、訓練模型並評估效能</li><li>保存模型，整理線上推理所需的輸入欄位與輸出結果</li></ul></li>
+          <li>Vibe Coding × SDD 規格驅動開發實戰
+            <ul><li>認識 SDD 流程：從需求釐清、撰寫規格到設定驗收條件</li><li>以預測模型線上推理系統為範例，運用 AI Agent 依規格逐步開發</li><li>根據驗收條件測試、修正並迭代系統，練習以規格引導 Vibe Coding</li></ul></li>
+          <li>運用 Skills 與 MCP 擴充 AI Agent 的應用能力
+            <ul><li>認識 Skills 與 MCP 的角色，以及 AI Agent 如何透過工具使用既有系統</li><li>以第 2 部分的線上推理系統為範例，將推理功能封裝為 MCP 工具，並建立引導 AI Agent 操作的 Skill</li><li>綜合演練：使用範例資料，讓 AI Agent 呼叫系統、呈現結果並檢查輸入與輸出</li></ul></li>
+        </ol></div>
+      <div><div class="blk-t">適合對象</div>
+        <ul>
+          <li>對 AI 應用、醫療資料分析或智慧醫療有興趣者</li>
+          <li>希望運用 AI Agent 完成資料分析、模型建立及應用系統開發的醫療、研究、資訊或相關領域人員</li>
+        </ul></div>
+      <div><div class="blk-t">上完課你能做到</div>
+        <ol>
+          <li>完成一個醫療情境的預測模型，並能說明其輸入、輸出與基本效能</li>
+          <li>產出線上推理系統的規格與可操作原型，並依驗收條件進行測試</li>
+          <li>完成可呼叫推理功能的 MCP 工具及引導 AI Agent 操作的 Skill，並以範例資料展示流程</li>
+          <li>能說明模型結果的適用範圍與使用限制</li>
+        </ol></div>
+    </div>
   </article>
   </div>
 </section>
